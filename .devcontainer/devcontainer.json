@@ -3,10 +3,10 @@
 // https://github.com/devcontainers/templates/tree/main/src/python
 {
 	"name": "ML ZoomCamp",
-	"image": "mcr.microsoft.com/devcontainers/python:3.11",
+	"image": "mcr.microsoft.com/devcontainers/python:3.12",
 
 	// Full uv mode: install uv, create venv, sync dependencies from pyproject + uv.lock
-	"postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && uv venv --python 3.11 && uv sync",
+	"postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && uv venv --python 3.12 && uv sync",
 
 	// Automatically use the virtual environment for VSCode Python
 	"customizations": {
