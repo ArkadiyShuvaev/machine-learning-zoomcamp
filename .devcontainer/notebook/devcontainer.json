@@ -1,0 +1,28 @@
+{
+  "name": "ML ZoomCamp - Notebook",
+  "dockerComposeFile": [
+    "../../docker-compose.yml"
+  ],
+  "service": "notebook",
+  "workspaceFolder": "/workspaces/ml-zoomcamp",
+  "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && uv venv --python 3.12 && uv sync",
+  "containerEnv": {
+    "PYTHONPATH": "/workspaces/ml-zoomcamp",
+    "UV_VENV_CLEAR": 1
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": ".venv/bin/python"
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "streetsidesoftware.code-spell-checker",
+        "mechatroner.rainbow-csv",
+        "shardulm94.trailing-spaces"
+      ]
+    }
+  }
+}

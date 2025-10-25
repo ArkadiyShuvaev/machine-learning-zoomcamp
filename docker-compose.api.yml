@@ -1,0 +1,13 @@
+services:
+  api:
+    image: agrigorev/zoomcamp-model:2025
+    container_name: zoomcamp-web-api
+#    ports:
+#      - "9696:9696"
+#    environment:
+#      - MODEL_PATH=/app/model/model.bin
+    networks:
+      - zoomcamp-net
+
+networks:
+  zoomcamp-net:
