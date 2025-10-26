@@ -5,7 +5,7 @@
   ],
   "service": "notebook",
   "workspaceFolder": "/workspaces/ml-zoomcamp",
-  "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && uv venv --python 3.12 && uv sync",
+  "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && uv venv --system-site-packages && uv sync",
   "containerEnv": {
     "PYTHONPATH": "/workspaces/ml-zoomcamp",
     "UV_VENV_CLEAR": 1

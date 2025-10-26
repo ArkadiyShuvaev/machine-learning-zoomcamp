@@ -1,6 +1,7 @@
 FROM agrigorev/zoomcamp-model:2025
 
 WORKDIR /code
+COPY ./src/05-deployment/web_service_q6.py .
 COPY ./src/05-deployment/prediction_service_q6.py .
 COPY ./pyproject.toml .
 
@@ -8,4 +9,4 @@ RUN pip install uv
 RUN uv venv --system-site-packages
 RUN uv sync
 
-CMD ["uvicorn", "web_service:app", "--port", "8000"]
+CMD ["uv", "run", "uvicorn", "web_service_q6:app", "--host", "0.0.0.0", "--port", "8000"]
