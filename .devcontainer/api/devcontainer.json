@@ -26,7 +26,8 @@
         "ms-toolsai.jupyter",
         "streetsidesoftware.code-spell-checker",
         "mechatroner.rainbow-csv",
-        "shardulm94.trailing-spaces"
+        "shardulm94.trailing-spaces",
+        "redhat.vscode-yaml"
       ]
     }
   }

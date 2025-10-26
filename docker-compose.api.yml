@@ -1,6 +1,9 @@
 services:
   api:
-    image: agrigorev/zoomcamp-model:2025
+    build:
+      dockerfile: Dockerfile.api
+      context: .
+
     container_name: zoomcamp-web-api
 #    ports:
 #      - "9696:9696"
