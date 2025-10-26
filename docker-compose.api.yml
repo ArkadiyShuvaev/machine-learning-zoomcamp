@@ -5,12 +5,8 @@ services:
       context: .
 
     container_name: zoomcamp-web-api
-#    ports:
-#      - "9696:9696"
+    ports:
+      - "8000:8000"
 #    environment:
 #      - MODEL_PATH=/app/model/model.bin
-    networks:
-      - zoomcamp-net
 
-networks:
-  zoomcamp-net:

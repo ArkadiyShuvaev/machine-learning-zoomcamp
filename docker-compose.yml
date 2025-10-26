@@ -4,8 +4,3 @@ services:
     command: sleep infinity
     volumes:
       - .:/workspaces/ml-zoomcamp:cached
-    networks:
-      - zoomcamp-net
-
-networks:
-  zoomcamp-net:
