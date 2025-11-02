@@ -15,4 +15,5 @@ dependencies = [
     "fastapi",
     "uvicorn>=0.38.0",
     "pydantic>=2.12.3",
+    "xgboost>=3.1.1",
 ]

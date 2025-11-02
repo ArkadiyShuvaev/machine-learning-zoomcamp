@@ -8,6 +8,7 @@
   "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && uv venv --system-site-packages && uv sync",
   "containerEnv": {
     "PYTHONPATH": "/workspaces/ml-zoomcamp",
+    "UV_LINK_MODE": "copy",
     "UV_VENV_CLEAR": 1
   },
   "customizations": {
